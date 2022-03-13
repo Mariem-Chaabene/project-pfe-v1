@@ -1,0 +1,89 @@
+<header>
+    <section id="hero" style="background: linear-gradient(-26deg, rgb(42,17,197) 1%, rgb(9,248,19) 99%);">
+        <nav class="navbar navbar-light navbar-expand-md">
+            <div class="container-fluid"><a class="navbar-brand text-light" href="#" style="font-size: 30px;"><strong>BeFoot</strong></a></div>
+        </nav>
+        <h4 class="text-center" id="titre" style="font-size: 50px;margin-top: 10px;"><br><strong>Devenez membre&nbsp;du plus grand catalogue des terrains de Tunisie</strong><br><br><br></h4>
+    </section>
+</header>
+
+<div class="formulaire" >
+    <div class="container">
+        <div class="mt-n5">
+            <div class="card border-0 h-100 shadow bg-white" id="forms">
+                <div class="card-body p-3 p-md-4">
+                    <h2 class="text-center mb-3">Ajouter votre terrain sur BeFoot</h2>
+                    <form name="partner" method="post">
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="partner_firstname" class="required">Prénom *</label>
+                                    <input type="text" id="partner_firstname" name="partner_firstname" ngModel #partner_firstname="ngModel" required="required" 
+                                    
+                                    [ngClass]="{'is-invalid': partner_firstname.touched && !partner_firstname.valid}" 
+                                    class="form-control">
+                                    <div class="invalid-feedback">
+                                        <span *ngIf="partner_firstname.errors?.['required']">
+                                           Entrer votre prenom
+                                        </span>
+                                        <span *ngIf="partner_firstname.errors?.['minlength']">
+                                            Minimum 4 caractères
+                                          </span>
+                                    </div>                                 
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="partner_lastname" class="required">Nom *</label>
+                                    <input type="text" id="partner_lastname" name="partner_lastname" ngModel #partner_lastname="ngModel" required="required" 
+                                    
+                                    [ngClass]="{'is-invalid': partner_lastname.touched && !partner_lastname.valid}" 
+                                    class="form-control">
+                                    <div class="invalid-feedback">
+                                        <span *ngIf="partner_firstname.errors?.['required']">
+                                           Entrer votre nom
+                                        </span>
+                                    </div>
+
+                                 
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="partner_email" class="required" >Email *</label>
+                                            <input type="email" id="partner_email" name="partner[email]" required="required" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="form-group">
+                                                <label for="partner_phone_number">Numéro de Téléphone *</label>
+                                                <input type="text" id="partner_phone_number" name="partner[partner_phone_number]" placeholder="+216xx xxx xxx" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center-mt-3">
+                                        <button type="submit" id="form-send" name="form[send]" class="btn-light btn-lg btn mx-auto"> Envoyer</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
