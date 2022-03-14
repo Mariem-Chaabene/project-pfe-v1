@@ -1,31 +1,25 @@
 body {
-    background: #000000;
-    color: rgb(255,255,255);
-  }
-  
-  #hero {
-    width: 100%;
-    height: 100vh;
-    color: #ffffff;
-  }
-  
-  #titre {
-    font-size: 90px;
-    text-align: left;
-  }
- forrr
- {
-    margin-top: 50px;
- }
-
-#text-center
-{
-  color: #303030
-  ;
+  background: #000000;
+  color: rgb(255, 255, 255);
 }
-  
- 
-  
-  
-  
-  
+
+#hero {
+  width: 100%;
+  color: #ffffff;
+}
+
+#titre {
+  font-size: 90px;
+  text-align: left;
+}
+
+forrr {
+  margin-top: 50px;
+}
+
+#text-center {
+  color: #303030;
+}
+.formulaire{
+  margin-top: 5em;
+}

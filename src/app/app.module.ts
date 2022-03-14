@@ -8,7 +8,9 @@ import { StadeComponent } from './stade/stade.component';
 import { AjoutBddComponent } from './ajout-bdd/ajout-bdd.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-
+import { CustomFormsModule } from 'ng2-validation';
+import { ConfProComponent } from './conf-pro/conf-pro.component';
+import {ExampleIconComponent} from './example-icon/example-icon.component';
 
 
 
@@ -19,6 +21,9 @@ import { FormsModule } from '@angular/forms';
     AccueilComponent,
     StadeComponent,
     AjoutBddComponent,
+    ConfProComponent,
+    
+
     
     
   ],
@@ -27,7 +32,10 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     RouterModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    CustomFormsModule,
+    ExampleIconComponent
+
 
     
   ],

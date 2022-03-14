@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+/*import {MatDialog} from '@angular/material/dialog';*/
 
 @Component({
   selector: 'app-ajout-bdd',
@@ -6,8 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./ajout-bdd.component.css']
 })
 export class AjoutBddComponent {
-  logObj(partner_firstname: any) {
-    console.log(partner_firstname);
+ onSubmit(data:any)
+  {
+    console.warn(data);
   }
+ 
+ /* constructor(public dialog: MatDialog) {}
+ openDialog() {
+    this.dialog.open(DialogElementsExampleDialog);
+  }*/
 
 }
+
+
