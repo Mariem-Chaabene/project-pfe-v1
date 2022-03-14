@@ -10,7 +10,6 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { CustomFormsModule } from 'ng2-validation';
 import { ConfProComponent } from './conf-pro/conf-pro.component';
-import {ExampleIconComponent} from './example-icon/example-icon.component';
 
 
 
@@ -33,8 +32,8 @@ import {ExampleIconComponent} from './example-icon/example-icon.component';
     RouterModule,
     HttpClientModule,
     FormsModule,
-    CustomFormsModule,
-    ExampleIconComponent
+    CustomFormsModule
+    
 
 
     
