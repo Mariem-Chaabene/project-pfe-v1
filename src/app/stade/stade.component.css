@@ -22,10 +22,31 @@ body {
     font-size: 30px;
     margin-top: 10px;
   }
-  #dropdownMenuButton
-  {
-    background-color: ;
-  }
-  
-  
-  
+ #dropdown1
+ {
+   margin-left: 150px;
+   margin-top: 2px;
+ }
+.d-sm-flex
+{
+  border-radius: 30px;
+}
+.d-sm-flex
+{
+  margin-top: 10px;
+}
+#btnFind
+{
+  color: #ffffff;
+}
+.map-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 30px;
+}
+agm-map{
+  height: 400px;
+}

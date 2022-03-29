@@ -5,7 +5,9 @@
 export const environment = {
   production: false
 };
-
+mapbox: {
+  accessToken:'pk.eyJ1IjoibWFyaWVtLWNoYWFiZW5lIiwiYSI6ImNsMWFyc2FicDBsamYza21sajIwcjA0dHcifQ.w_1j43IPn2DgVDuzYZaXZw'
+}
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.

@@ -10,8 +10,14 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { CustomFormsModule } from 'ng2-validation';
 import { ConfProComponent } from './conf-pro/conf-pro.component';
-
-
+import {DropdownModule} from 'primeng/dropdown';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClient } from '@angular/common/http';
+import {StyleClassModule} from 'primeng/styleclass';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { LoginComponent } from './login/login.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import {AgmCoreModule} from '@agm/core';
 
 
 @NgModule({
@@ -21,10 +27,9 @@ import { ConfProComponent } from './conf-pro/conf-pro.component';
     StadeComponent,
     AjoutBddComponent,
     ConfProComponent,
-    
-
-    
-    
+    DashboardComponent,
+    LoginComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
@@ -32,10 +37,14 @@ import { ConfProComponent } from './conf-pro/conf-pro.component';
     RouterModule,
     HttpClientModule,
     FormsModule,
-    CustomFormsModule
-    
-
-
+    CustomFormsModule,
+    DropdownModule,
+    BrowserAnimationsModule,
+    StyleClassModule,
+  
+    AgmCoreModule.forRoot({
+      apiKey:'AIzaSyDP6m9-cEXqrO6qY5jDyDGeDP9gVZgxg7s'
+    })
     
   ],
   providers: [],

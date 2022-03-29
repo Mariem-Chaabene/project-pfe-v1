@@ -1,3 +1,8 @@
+@import 'primeng/resources/themes/arya-blue/theme.css';
+@import 'primeng/resources/primeng.css';
+@import 'primeicons/primeicons.css';
+@import 'primeflex/primeflex.css';
+
 body {
     background: linear-gradient(-26deg,
         rgb(42, 17, 197) 1%,

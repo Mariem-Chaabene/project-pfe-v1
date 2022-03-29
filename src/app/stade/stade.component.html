@@ -1,4 +1,69 @@
+
+
+
 <section id="hero">
-    
+    <nav class="navbar navbar-light navbar-expand-md">
+        <div class="container-fluid"><a class="navbar-brand text-light" href="#" style="font-size: 30px;"><strong>BeFoot</strong></a></div>
+    </nav>
+<div class="d-sm-flex justify-content-center">
+    <div class="d-sm-flex border-2  relative ">
+            <div class="flex align-items-center " >
+                <div >
+                    <div class="flex align-items-center p-3 text-900 cursor-pointer" pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein"
+                    leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true"   >
+                        <span><strong>  Selectionner ville    </strong></span>
+                        <i class="pi pi-chevron-down ml-2"></i>
+                    </div>
+                 <div class="absolute shadow-2 min-w-full py-2 hidden origin-top">
+                    <ul class="list-none p-0 m-0">
+                         <li> <a class="block py-2 px-3 no-underline text-900 hover:bg-gray-200 transition-all transition-duration-200 cursor-pointer"  href="#">Sfax</a> </li>
+                         <li> <a class="block py-2 px-3 no-underline text-900 hover:bg-gray-200 transition-all transition-duration-200 cursor-pointer"  href="#">Tunis</a></li>
+                         <li> <a class="block py-2 px-3 no-underline text-900 hover:bg-gray-200 transition-all transition-duration-200 cursor-pointer"  href="#">Sousse</a></li>
+                    </ul>
+                </div>   
+            </div>
+        </div>
+    <div >
+        <div class="flex align-items-center p-3 text-900 cursor-pointer" pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein"
+        leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
+            <span><strong>  Selectionner region   </strong></span>
+            <i class="pi pi-chevron-down ml-2"></i>
+        </div>
+     <div class="absolute shadow-2 min-w-full py-2 hidden origin-top">
+         <ul class="list-none p-0 m-0">
+             <li> <a class="block py-2 px-3 no-underline text-900 hover:bg-gray-200 transition-all transition-duration-200 cursor-pointer"  href="#"> Taniour</a> </li>
+             <li> <a class="block py-2 px-3 no-underline text-900 hover:bg-gray-200 transition-all transition-duration-200 cursor-pointer"  href="#">Gremda</a></li>
+             <li> <a class="block py-2 px-3 no-underline text-900 hover:bg-gray-200 transition-all transition-duration-200 cursor-pointer"  href="#">Afran</a></li>
+         </ul>
+     </div>   
+    </div>
+    <div >
+        <div class="flex align-items-center p-3 text-900 cursor-pointer" pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein"
+        leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
+            <span><strong>  Selectionner Club  </strong></span>
+            <i class="pi pi-chevron-down ml-2"></i>
+        </div>
+     <div class="absolute shadow-2 min-w-full py-2 hidden origin-top">
+         <ul class="list-none p-0 m-0">
+             <li> <a class="block py-2 px-3 no-underline text-900 hover:bg-gray-200 transition-all transition-duration-200 cursor-pointer"  href="#"> M club</a> </li>
+             <li> <a class="block py-2 px-3 no-underline text-900 hover:bg-gray-200 transition-all transition-duration-200 cursor-pointer"  href="#">Duo club</a></li>
+             <li> <a class="block py-2 px-3 no-underline text-900 hover:bg-gray-200 transition-all transition-duration-200 cursor-pointer"  href="#">CLUB EYA</a></li>
+         </ul>
+     </div>   
+    </div>
+
+    <button id="btnFind" class="btn btnFind mt-1 mb-1"><strong> Trouver ici  </strong> <span class="fa fa-search fa-lg px-1" id="search_icon"></span>  </button>
+</div>
+</div>
+
+<br><br>
+
+
+
+<agm-map [latitude]="latitude" [longitude]="longitude">
+</agm-map>
+
+
+
 
 </section> 
