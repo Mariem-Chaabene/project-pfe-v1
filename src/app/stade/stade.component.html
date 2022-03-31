@@ -14,9 +14,9 @@
                         <span><strong>  Selectionner ville    </strong></span>
                         <i class="pi pi-chevron-down ml-2"></i>
                     </div>
-                 <div class="absolute shadow-2 min-w-full py-2 hidden origin-top">
-                    <ul class="list-none p-0 m-0"   *ngFor="let ville of villes">
-                         <li> <a class="block py-2 px-3 no-underline text-900 hover:bg-gray-200 transition-all transition-duration-200 cursor-pointer" > {{ville.name}} </a> </li>
+                 <div class="absolute shadow-2  py-2 hidden origin-top">
+                        <ul class="list-none p-0 m-0"  >
+                         <li  *ngFor="let ville of villes"> <a class="block py-2 px-3 no-underline text-900 hover:bg-gray-200 transition-all transition-duration-200 cursor-pointer" data-spy="scroll" data-target="#navbar-example2" data-offset="0"> {{ville}} </a> </li>
                     </ul>
                 </div>   
             </div>
@@ -27,7 +27,7 @@
             <span><strong>  Selectionner region   </strong></span>
             <i class="pi pi-chevron-down ml-2"></i>
         </div>
-     <div class="absolute shadow-2 min-w-full py-2 hidden origin-top">
+     <div class="absolute shadow-2  py-2 hidden origin-top">
          <ul class="list-none p-0 m-0">
              <li> <a class="block py-2 px-3 no-underline text-900 hover:bg-gray-200 transition-all transition-duration-200 cursor-pointer"  href="#"> Taniour</a> </li>
              <li> <a class="block py-2 px-3 no-underline text-900 hover:bg-gray-200 transition-all transition-duration-200 cursor-pointer"  href="#">Gremda</a></li>
@@ -41,7 +41,7 @@
             <span><strong>  Selectionner Club  </strong></span>
             <i class="pi pi-chevron-down ml-2"></i>
         </div>
-     <div class="absolute shadow-2 min-w-full py-2 hidden origin-top">
+     <div class="absolute shadow-2  py-2 hidden origin-top">
          <ul class="list-none p-0 m-0">
              <li> <a class="block py-2 px-3 no-underline text-900 hover:bg-gray-200 transition-all transition-duration-200 cursor-pointer"  href="#"> M club</a> </li>
              <li> <a class="block py-2 px-3 no-underline text-900 hover:bg-gray-200 transition-all transition-duration-200 cursor-pointer"  href="#">Duo club</a></li>
@@ -54,14 +54,10 @@
 </div>
 </div>
 
-<br><br><br><br><br><br><br><br><br><br>
-<br>
-
-
+<br><br>
+<div class="map-wrap">
+    <div class="info"></div>
 <agm-map [latitude]="latitude" [longitude]="longitude">
 </agm-map>
-
-
-
-
+</div>
 </section> 

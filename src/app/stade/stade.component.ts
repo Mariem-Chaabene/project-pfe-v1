@@ -11,11 +11,20 @@ import { url } from 'inspector';
   styleUrls: ['./stade.component.css']
 })
 export class StadeComponent implements OnInit{
+  clickedMarker(label: string, index: number) {
+    console.log(`clicked the marker: ${label || index}`)
+  }
+   
+ 
+
+
   zoom: number = 8;
   latitude= 33.886917;
   longitude=9.537499;
 
-   villes: any =[];
+  
+   /*regions:any [];*/
+   villes: any =[1,2,3,5,9,4,7,8,6,6,3,5,8,9,8,8,8,8,8,8,8,88,8,8,8,8,8,8];
   ngOnInit(): void 
   {
     this.http.get(this.url).subscribe(response=>{
@@ -24,8 +33,9 @@ export class StadeComponent implements OnInit{
       )
   }
   constructor(private http:HttpClient){}
-    url= "http://192.168.1.45:8080/villes";
-  
+    url= "http://192.168.1.45:8080/villes?size=24";
+    /*url="http://192.168.1.45:8080/regions";*/
+ 
 
   
 

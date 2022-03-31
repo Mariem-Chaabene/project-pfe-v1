@@ -49,4 +49,32 @@ body {
 }
 agm-map{
   height: 400px;
+  width: 50%;
+}
+
+#liste
+{
+  border-radius: 30px;
+  border-color: #ffffff;
+}
+
+ul.list-none.p-0.m-0 {
+  
+  overflow: scroll;
+  max-height: 150px;
+  width:200px
+}
+
+::ng-deep .agm-map-container-inner.sebm-google-map-container-inner {
+  width: 100%!important;
+}
+.info {
+  width: 50%;
+}
+.map-wrap {
+  width: 100%;
+  display: flex;
+}
+.absolute.shadow-2.py-2.origin-top {
+  z-index: 9;
 }
